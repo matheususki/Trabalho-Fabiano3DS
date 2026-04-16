@@ -167,6 +167,30 @@
         button {
             padding: 12px;
         }
+
+    .btn-painel {
+        width: 100%;
+        padding: 14px;
+        background: transparent;
+        color: #667eea;
+        border: 2px solid #667eea;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 15px;
+    }
+
+    .btn-painel:hover {
+        background: rgba(102, 126, 234, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .btn-painel:active {
+        transform: translateY(0);
+    }
+
     }
 </style>
     </style>
@@ -193,6 +217,11 @@
                 <small id="contador">0/250 caracteres</small>
             </div>
             <button type="submit">Enviar</button>
+                        <button type="submit">Enviar</button>
+            <!-- Novo botão para acessar o painel -->
+            <a href="listar.php" style="text-decoration: none;">
+                <button type="button" class="btn-painel">📋 Ver Mensagens Cadastradas</button>
+            </a>
         </form>
         <div id="resposta" class="mensagem"></div>
     </div>
